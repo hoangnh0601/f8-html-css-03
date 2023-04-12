@@ -343,3 +343,39 @@ a {
   line-height: 1.75;
   color: var(--btn-bg);
 }
+
+/* Feature */
+
+.feature {
+  padding: 170px 0;
+}
+
+.feature-inner {
+  column-gap: 130px;
+}
+
+.feature__media {
+  position: relative;
+  width: 48.7%;
+  padding-bottom: 121px;
+  padding-right: 58px;
+}
+
+.feature__img {
+  width: 521px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.feature__img:last-child {
+  position: absolute;
+  width: 332px;
+  height: 370px;
+  right: 0;
+  bottom: 0;
+}
+
+.feature__content :last-child {
+  margin-top: 38px;
+}
