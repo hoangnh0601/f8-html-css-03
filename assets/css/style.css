@@ -7,6 +7,7 @@
   --btn-bg: #2e80ce;
   --light-bg: #f6fbff;
   --desc-color: #575f66;
+  --light-blue: #eaf6ff;
 }
 
 html {
@@ -141,7 +142,7 @@ a {
   align-items: center;
 }
 
-.header-action__signup {
+.header-action__sign-up {
   min-width: 104px;
   margin-left: 7px;
   padding: 14px 12px;
@@ -213,9 +214,9 @@ a {
   height: 410px;
 }
 
-.main {
-  /* background-color: var(--main-bg); */
-}
+/* .main {
+  background-color: var(--main-bg);
+} */
 
 .service {
   padding: 170px 0;
@@ -310,7 +311,7 @@ a {
 .work-item {
   padding: 44px;
   background: #ffffff;
-  border: 16px solid #eaf6ff;
+  border: 16px solid var(--light-blue);
   border-radius: 4px;
   transition: 0.25s;
   cursor: pointer;
@@ -347,7 +348,7 @@ a {
 /* Feature */
 
 .feature {
-  padding: 170px 0;
+  padding: 170px 0 85px;
 }
 
 .feature-inner {
@@ -378,4 +379,140 @@ a {
 
 .feature__content :last-child {
   margin-top: 38px;
+}
+
+/* Member */
+
+.member {
+  padding: 85px 0;
+}
+
+.member__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member__cta {
+  margin-top: 38px;
+}
+
+.member__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  margin-top: 70px;
+}
+
+.member__item:hover .member__thumb {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.member__card-background {
+  padding-top: 28px;
+  background: var(--light-blue);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.member__thumb {
+  display: block;
+  max-width: 100%;
+  height: 290px;
+  object-fit: cover;
+  transition: 0.25s;
+}
+.member__name {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: center;
+  margin-top: 12px;
+  color: var(--primary-color);
+}
+
+.member__desc {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--desc-color);
+}
+
+.member__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
+  margin-top: 38px;
+  color: var(--desc-color);
+}
+
+.control_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border: 1px solid var(--desc-color);
+  border-radius: 50%;
+}
+
+.control_btn:hover {
+  color: #fff;
+  background-color: var(--btn-bg);
+  border-color: var(--btn-bg);
+  cursor: pointer;
+}
+
+.control_btn:active {
+  opacity: 0.9;
+}
+
+/* Install */
+.install {
+  margin-top: 180px;
+}
+
+.install__inner {
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+  background: var(--btn-bg);
+  border-radius: 4px;
+}
+
+.install__img {
+  display: block;
+  margin-top: -95px;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+
+.install__content {
+  margin-left: 160px;
+}
+
+.install__heading {
+  color: #fff;
+}
+
+.install__desc {
+  color: #fff;
+}
+
+.install__row {
+  margin-top: 38px;
+  column-gap: 28px;
+}
+
+.install__btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
